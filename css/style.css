@@ -1,10 +1,12 @@
 /* Голова */
 header{
     width: 100%;
-    padding: 0.94rem 0;
+    padding: 1.25rem 0;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: var(--color_black);
+    grid-area: header
 }
 .logo{
     color: white;
@@ -16,7 +18,7 @@ header{
 header nav.main_nav{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     color: var(--color_white);
 }
 header nav.minor_imp{
@@ -33,12 +35,12 @@ div.exile{
 
 }
 div.img_minor_imp img{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    padding: 0.3rem;
 }
 div.img_minor_imp img:hover{
     background-color: var(--color_blue);
-    padding: 0.3rem;
     border-radius: 15px;
 }
 
@@ -60,18 +62,17 @@ div.welcome_content{
     border-radius: 20px;
     position: absolute;
 }
-h1.welcome_content, h2.welcome_content, p.welcome_content{
+p.welcome_content{
+    font-size: 1.56rem;
     color: var(--color_white);
 }
-h1.welcome_content{font-size: 2.5rem;}
-h2.welcome_content{font-size: 2.2rem;}
-p.welcome_content{font-size: 1.56rem;}
 
 /* Слайдер приветственного раздела */
 .conteiner_header{
     width: 100%;
     height: 100%;
     flex-shrink: 0;
+    grid-area: conteiner_header;
 }
 div.conteiner_header img{
     object-fit: cover;
@@ -96,6 +97,7 @@ main.main_header div.button_nav{
     display: flex;
     justify-content: center;
     background-color: var(--color_white);
+    grid-area: menu;
 }
 .menu_p{
     padding: 0.44rem;
@@ -119,49 +121,68 @@ main.main_header div.button_nav{
 h2.menu_h2{
     background-color: var(--color_white);
     color: var(--color_black);
-    font-size: 1.8rem;
     text-align: center;
 }
 
 /* О нас */
 section.about_us{
     background-color: var(--color_darkgrey);
+    grid-area: about_us;
+    display: grid;
+    grid-template-rows: 0.3fr 2fr;
+    grid-template-areas:
+        "h2_about_us"
+        "about_us_main";
 }
 div.about_us_main{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-areas: "act_1 act_2 act_3 act_4";
     gap: 20px;
-    padding: 3.1rem 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3.1rem 1.8rem;
+
+    grid-area: about_us_main;
 }
-div.about_us{
+div.about_us {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 21.25rem;
-    height: 12.5rem;
+    justify-content: center;
+    width: 100%; 
+    height: 200px;
     position: relative;
 }
 div.about_us img.container{
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
 }
 h2.about_us{
-    padding: 0.625rem;
+    padding: 0.94rem;
     color: var(--color_white);
+
+    grid-area: h2_about_us;
+}
+h3.about_us{
     font-family: Inter;
-    font-size: 1.25rem;
+    padding: 1rem;
+    text-align: center;
 }
 h2.title{
     color: var(--color_white);
     background-color: var(--color_black);
-    font-size: 1.8rem;
     text-align: center;
     padding: 1.25rem;
 }
+div.about_us:nth-child(1) { grid-area: act_1; }
+div.about_us:nth-child(2) { grid-area: act_2; }
+div.about_us:nth-child(3) { grid-area: act_3; }
+div.about_us:nth-child(4) { grid-area: act_4; }
+.active_1{grid-area: act_1_2;}
+.active_2{grid-area: act_2_2;}
+.active_3{grid-area: act_3_2;}
+.active_4{grid-area: act_4_2;}
 
 .active_1, .active_2, .active_3, .active_4{
     width: 21.25rem;
@@ -171,6 +192,7 @@ h2.title{
     overflow: hidden;
     opacity: 0;
     border-radius: 15px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,17 +222,27 @@ div.about_us:hover .active_4,p.active{
 
 
 /* Коллекцции */
+section.collections_all{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6.25rem repeat(3, 1fr);
+    grid-template-areas: 
+        "h2_collections"
+        "nature"
+        "magic"
+        "neon";
+    
+    grid-area: collections;
+}
 h2.collections{
     text-align: center;
-    color: var(--);
     padding: 1.25rem;
-    font-size: 1.8rem;
     background-color: var(--color_black);
     color: var(--color_white);
+    grid: h2_collections;
 }
 main.left_part{
     width: 70%;
-    height: 80%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3.75rem 16.9rem 5rem;
@@ -218,10 +250,8 @@ main.left_part{
         "h2"
         "p"
         "colors";
-    
+        
     grid-area: left_part;
-
-    padding: 1.8rem 4.67rem;
 }
 #left_part{
     width: 100%;
@@ -236,13 +266,18 @@ main.color{
     display: flex;
     flex-direction: row; 
     justify-content: baseline;
-    gap: 28px;
+    column-gap: 0;
     align-items: center;
     padding: 0.3rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(6, 0.3fr);
+    grid-template-areas: 
+        "col_1 col_2 col_3 col_4 col_5 col_6";
 }
 div.main{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     padding: 0.3rem 0;
 }
@@ -265,19 +300,17 @@ div.main{
 main.main{
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     grid-area: slider;
-    padding: 0.94rem 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 .slider{
     width: 50rem;
-    height: 31.25rem;
+    height: 35rem;
     border-radius: 20px;
-    object-fit: cover;
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 .track{
     width: 100%;
@@ -305,7 +338,6 @@ div.conteiner img{
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 15px;
 }
 
 button{
@@ -319,50 +351,58 @@ button{
 /* Кнопка для поднятия наверх */
 #elevator{
     position: fixed;
-    width: 100px;
-    height: 100px;
+    bottom: 0.625rem;
+    right: 0.94rem;
     border-radius: 50%;
     background-color: var(--color_blue);
-    background-image: url(../images/elevator.png);
+    background-image: url(/Всякое_рисованное/elevator.png);
     background-position: center;
     background-size: cover;
-    bottom: 0.625rem;
-    right: 1.25rem;
+}
+
+
+section.important_inform{
+    display: grid;
+    grid-template-rows: 2fr 0.7fr;
+    grid-template-areas:
+        "form"
+        "contacts";
+    grid-area: important_inform;
+    padding: 1.8rem 2.8rem;
+    background-color: var(--color_black);
+    position: relative;
 }
 
 /* Форма связи */
 section.form_main{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas: 
-        "main_left img_form"
         "main_left img_form";
-    position: relative;
     color: var(--color_white);
     background-color: var(--color_black);
-    padding: 1.8rem 4.4rem;
+
+    grid-area: form;
 }
 main.left_part_form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: flex-start;
     grid-area: main_left;
 }
-main.left_part_form h2{
-    font-size: 2.2rem;
-}
 main.left_part_form h2, p{color: var(--color_white);}
-main.img_form{
+main.main_img_form{
     grid-area: img_form;
-    position: absolute;
-    padding: 0 0 0 0.94rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-img.img_form{
-    object-fit: contain;
+main.main_img_form img{
+    object-fit: cover;
     width: 50rem;
     border-radius: 20px;
+    height: 35rem;
 }
 input[type="email"],input[type="text"],input[type="number"]{
     padding: 0.625rem;
@@ -392,9 +432,7 @@ section.sex{
     font-family: Inter;
     font-size: 1.56rem;
     padding: 0.625rem 0;
-}
-section.male{
-    padding: 0 3.1rem 0 0;
+    gap: 2rem;
 }
 button.form{
     border-radius: 15px;
@@ -410,12 +448,12 @@ button.form:hover{
     border: 5px solid var(--color_blue);
 }
 main.thank_message{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-}
-#thank_message {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    position: absolute;
     display: none; 
 }
 #thank_message.active {
@@ -463,12 +501,13 @@ section.contacts{
     grid-template-areas: 
         "phone social";
     position: relative;
-    height: 18.75rem;
-    padding: 1.8rem 4.4rem;
+    padding: 30px 0;
+    height: 12.5rem;
+
+    grid-area: contacts;
 }
 main.phones h2, main.social_media h2{
     color: var(--color_white);
-    font-size: 2.2rem;
     padding: 1.25rem 0;
 }
 main.phones{
@@ -476,25 +515,20 @@ main.phones{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: flex-start;
 }
 main.social_media{
     grid-area: social;
+}
+main.social{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: right;
-    padding: 0 1.25rem;
+    align-items: flex-end;
 }
 main.number p{
     font-size: 1.8rem;
     margin: 0 3.1rem 0 0;
-}
-main.img_social{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: right;
 }
 main.img_social img{
     width: 6.25rem;
@@ -512,6 +546,8 @@ footer{
     justify-content: space-around;
     background-color: var(--color_black);
     padding: 3.1rem 0 1.56rem 0;
+
+    grid-area: footer
 }
 
 .footer_p{

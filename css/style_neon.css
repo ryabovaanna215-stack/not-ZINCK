@@ -1,57 +1,71 @@
 .neon{
     margin: 15px 0 0 0;
-    padding: 0.625rem 0;
-    background-image: url(../images/Neon/фон_для_сайта.png);
+    padding: 1.8rem 2.8rem;
+    background-image: url(/Всякое_рисованное/Neon/фон_для_сайта.png);
     background-size: cover;
     background-position: center;
+
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 3.1rem 5fr 1fr;
+    grid-template-rows: 1fr ;
     grid-template-areas: 
-        "left_part slider"
-        "left_part slider"
         "left_part slider";
+
+    grid-area: neon;
 }
 
 .neon_color_1{
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 70px;
+    height: 70px;
     background-color: #c2ff40;
     border: 2px white solid;
     border-radius: 5px;
+
+    grid-area: col_1;
 }
 .neon_color_2{
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 70px;
+    height: 70px;
     background-color: #f7377e;
     border: 2px white solid;
     border-radius: 5px;
+
+    grid-area: col_2;
 }
 .neon_color_3{
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 70px;
+    height: 70px;
     background-color: #ffd808;
     border: 2px white solid;
     border-radius: 5px;
+
+    grid-area: col_3;
 }
 .neon_color_4{
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 70px;
+    height: 70px;
     background-color: #fe6941;
     border: 2px white solid;
     border-radius: 5px;
+
+    grid-area: col_4;
 }
 .neon_color_5{
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 70px;
+    height: 70px;
     background-color: #01ffdc;
     border: 2px white solid;
     border-radius: 5px;
+
+    grid-area: col_5;
 }
 .neon_color_6{
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 70px;
+    height: 70px;
     background-color: #f72551;
     border: 2px white solid;
     border-radius: 5px;
+
+    grid-area: col_6;
 }

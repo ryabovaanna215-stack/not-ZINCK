@@ -1,5 +1,335 @@
-@media (max-width: 2070px) {
+@media (max-width: 1594px) {
+    p.p_text_about{
+        font-size: 1.25rem;
+        width: 600px;
+    }
+    main.left_part_form p{
+        width: 30rem;
+    }
+}
+
+@media (max-width: 1526px) {
+    p.p_text_about{
+        font-size: 1.25rem;
+        width: 500px;
+    }
+    div.about_us img.container{
+        width: 5rem;
+        height: 5rem;
+    }
+    h2.about_us{
+        padding: 1.25rem;
+    }
+    main.main_img_form img, .slider{
+        width: 44rem;
+    }
+    section.sex{
+        font-size: 1.25rem;
+    }
+    main.img_social img{
+        width: 5rem;
+        height: 5rem;
+    }
+    main.number p{
+        font-size: 1.56rem;
+    }
     #elevator{
-        right: 1.8rem;
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 1412px) {
+    .natural_color_1, .natural_color_2, .natural_color_3, 
+    .natural_color_4, .natural_color_5, .natural_color_6,
+    .magic_color_1, .magic_color_2, .magic_color_3, .magic_color_4,
+    .magic_color_5, .magic_color_6, .neon_color_1, .neon_color_2,
+    .neon_color_3, .neon_color_4, .neon_color_5, .neon_color_6{
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer_p{
+        font-size: 1.25rem;
+    }
+    .logo{
+        font-size: 1.8rem;
+    }
+    a{
+        font-size: 1.25rem;
+    }
+    h2.title, h2.menu_h2, h2.collections{
+        font-size: 2rem;
+    }
+    section.collections_all{
+        grid-template-rows: 5.5rem repeat(3, 1fr);
+    }
+    main.phones h2, main.social_media h2{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1368px) {
+    header{
+        padding: 1.8rem 0;
+    }
+    header .logo{
+        font-size: 2.5rem;
+    }
+    a{
+        font-size: 1.56rem;
+    }
+    div.about_us_main{
+        padding: 3.1rem 2.2rem;
+    }
+    div.about_us img.container{
+        width: 8rem;
+        height: 8rem;
+    }
+    div.about_us{
+        width: 18.75rem;
+        height: 16.9rem;
+    }
+    h3.about_us{
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    p.menu_p{
+        font-size: 1.56rem;
+    }
+    .slider{
+        width: 44rem;
+        height: 30rem;
+    }
+    .natural_color_1, .natural_color_2, .natural_color_3, 
+    .natural_color_4, .natural_color_5, .natural_color_6,
+    .magic_color_1, .magic_color_2, .magic_color_3, .magic_color_4,
+    .magic_color_5, .magic_color_6, .neon_color_1, .neon_color_2,
+    .neon_color_3, .neon_color_4, .neon_color_5, .neon_color_6{
+        width: 55px;
+        height: 55px;
+    }
+    main.color{
+        column-gap: 1.5rem;
+        grid-template-columns: repeat(6, 55px);
+    }
+}
+
+@media (max-width: 1180px) {
+    .menu_p{
+        font-size: 1rem;
+    }
+    div.about_us {
+        width: 18.75rem;
+        height: 11.5rem;
+    }
+    div.about_us img.container{
+        width: 6rem;
+        height: 6rem;
+    }
+    .slider{
+        width: 37.5rem;
+        height: 25rem;
+    }
+    main.main_img_form img{
+        width: 37.5rem;
+    }
+
+    .natural_color_1, .natural_color_2, .natural_color_3, 
+    .natural_color_4, .natural_color_5, .natural_color_6,
+    .magic_color_1, .magic_color_2, .magic_color_3, .magic_color_4,
+    .magic_color_5, .magic_color_6, .neon_color_1, .neon_color_2,
+    .neon_color_3, .neon_color_4, .neon_color_5, .neon_color_6{
+        width: 50px;
+        height: 50px;
+    }
+    header{
+        padding: 1.25rem 0;
+    }
+    a{
+        font-size: 1.25rem;
+    }
+
+    .active_1, .active_2, .active_3, .active_4{
+        width: 18.75rem;
+    }
+}
+
+@media (max-width: 940px) {
+    p.welcome_content{
+        font-size: 1.25rem;
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+    h2.welcome_content{
+        font-size: 1.8rem;
+    }
+    div.about_us_main{
+        grid-template-columns: repeat(2, 21.25rem);
+        grid-template-areas: 
+            "act_1 act_2" 
+            "act_3 act_4";
+        row-gap: 5rem;
+        column-gap: 0;
+    }
+    .active_1, .active_2, .active_3, .active_4{
+        width: 30rem;
+        height: 13.5rem;
+    }
+    div.about_us img.container{
+        width: 9rem;
+        height: 9rem;
+    }
+    main.main_header .slider_welcome, .welcome{
+        height: 40rem;
+    }
+    div.conteiner_header img{
+        object-fit: cover;
+    }
+
+    p.active{
+        font-size: 1.25rem;
+    }
+    #elevator{
+        width: 100px;
+        height: 100px;
+    }
+    p.p_text_about{
+        width: 27rem;
+        font-size: 1.25rem;
+    }
+
+    main.color{
+        grid-template-rows: 1fr;
+        row-gap: 0;
+        column-gap: 0.5rem;
+        grid-template-columns: repeat(6, 50px);
+        grid-template-areas: 
+            "col_1 col_2 col_3 col_4 col_5 col_6";
+    }
+}
+
+@media (max-width:875px) {
+    .natural, .magic, .neon{
+        grid-template-columns: 3fr;
+        row-gap: 2rem;
+        column-gap: 0;
+        grid-template-rows: 0.5fr 0.9fr;
+        grid-template-areas: 
+            "left_part" 
+            "slider";
+    }
+    main.main{
+        justify-content: center;
+    }
+    #left_part{
+        align-items: center;
+        justify-content: center;
+    }
+    main.left_part{
+        width: 100%;
+    }
+    p.p_text_about{
+        width: 90%;
+        text-align: center;
+    }
+    .natural_color_1, .natural_color_2, .natural_color_3, 
+    .natural_color_4, .natural_color_5, .natural_color_6,
+    .magic_color_1, .magic_color_2, .magic_color_3, .magic_color_4,
+    .magic_color_5, .magic_color_6, .neon_color_1, .neon_color_2,
+    .neon_color_3, .neon_color_4, .neon_color_5, .neon_color_6{
+        width: 70px;
+        height: 70px;
+    }
+    main.color{
+        column-gap: 4.4rem;
+    }
+    .slider{
+        width: 90%;
+        height: 90%;
+    }
+
+    section.form_main{
+        grid-template-areas: 
+            "main_left";
+    }
+    main.main_img_form{
+        display: none;
+    }
+    main.left_part_form{
+        align-items: center;
+    }
+    form{
+        width: 100%;
+    }
+    main.left_part_form h2{
+        font-size: 1.8rem;
+    }
+    main.left_part_form p{
+        width: 100%;
+        text-align: center;
+    }
+    div.main{
+        justify-content: center;
+    }
+
+    section.contacts{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            "phone"
+            "social";
+    }
+    main.social{
+        align-items: flex-start;
+    }
+    main.img_social img{
+        margin-right: 2.8rem;
+        margin-left: 0;
+    }
+    section.important_inform {
+        grid-template-rows: 2fr 1.2fr;
+    }
+
+    .active_1, .active_2, .active_3, .active_4{
+        width: 25rem;
+        height: 12.5rem;
+    }
+    div.about_us img.container{
+        width: 8rem;
+        height: 8rem;
+    }
+    p.active{
+        font-size: 0.94rem;
+    }
+    div.about_us_main {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "act_1 act_2"
+            "act_3 act_4";
+        justify-items: center;
+    }
+
+    div.about_us, 
+    .active_1, .active_2, .active_3, .active_4 {
+        width: 18.75rem; 
+        height: 12.5rem;
+    }
+    body {
+        grid-template-rows: auto; 
+    }
+
+    a{
+        font-size: 0.94rem;
+        text-align: center;
+    }
+    div.img_minor_imp img{
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .logo{
+        font-size: 1.5rem;
     }
 }

@@ -1,57 +1,69 @@
 .natural{
-    padding: 0.625rem 0;
-    background-image: url(../images/Nature/фон_для_сайта.png);
+    padding: 1.8rem 2.8rem;
+    background-image: url(/Всякое_рисованное/Nature/фон_для_сайта.png);
     background-size: cover;
     background-position: center;
-    position: relative;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 3.1rem 5fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
-        "left_part slider"
-        "left_part slider"
         "left_part slider";
+
+    grid-area: nature;
 }
 
 .natural_color_1{
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 70px;
+    height: 70px;
     background-color: #86a788;
     border: 2px white solid;
     border-radius: 5px;
+
+    grid-area: col_1;
 }
 .natural_color_2{
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 70px;
+    height: 70px;
     background-color: #ffb38e;
     border: 2px white solid;
     border-radius: 5px;
+
+    grid-area: col_2;
 }
 .natural_color_3{
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 70px;
+    height: 70px;
     background-color: #bfecff;
     border: 2px white solid;
     border-radius: 5px;
+
+    grid-area: col_3;
 }
 .natural_color_4{
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 70px;
+    height: 70px;
     background-color: #f0c1e1;
     border: 2px white solid;
     border-radius: 5px;
+
+    grid-area: col_4;
 }
 .natural_color_5{
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 70px;
+    height: 70px;
     background-color: #d6c0b3;
     border: 2px white solid;
     border-radius: 5px;
+
+    grid-area: col_5;
 }
 .natural_color_6{
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 70px;
+    height: 70px;
     background-color: #ba94d1;
     border: 2px white solid;
     border-radius: 5px;
+
+    grid-area: col_6;
 }
