@@ -333,3 +333,37 @@
         font-size: 1.5rem;
     }
 }
+
+@media (max-width: 550px) {
+    section.about_us {
+        grid-template-rows: auto auto; /* Высота подстраивается под контент */
+    }
+
+    div.about_us_main {
+        /* Вместо фиксированных 25rem используем 1fr, чтобы вписаться в 550px */
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+            "act_1 act_2"
+            "act_3 act_4";
+        gap: 10px;
+        padding: 1rem;
+        justify-items: center; 
+    }
+
+    div.about_us {
+        width: 100%;
+        max-width: 250px; 
+        height: auto;
+    }
+
+    .active_1, .active_2, .active_3, .active_4 {
+        width: 100%;
+        height: 100%;
+    }
+
+    div.about_us img.container {
+        width: 6rem;
+        height: 6rem;
+    }
+}
