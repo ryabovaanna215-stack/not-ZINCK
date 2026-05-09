@@ -4,7 +4,6 @@
     background-image: url(../../images/Magic/фон_для_сайта.png);
     background-size: cover;
     background-position: center;
-    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -18,7 +17,6 @@
     background-color: #c2d9ff;
     border: 2px white solid;
     border-radius: 5px;
-
     grid-area: col_1;
 }
 .magic_color_2{
@@ -27,7 +25,6 @@
     background-color: #1230ae;
     border: 2px white solid;
     border-radius: 5px;
-
     grid-area: col_2;
 }
 .magic_color_3{
@@ -36,7 +33,6 @@
     background-color: #7481a3;
     border: 2px white solid;
     border-radius: 5px;
-
     grid-area: col_3;
 }
 .magic_color_4{
@@ -45,7 +41,6 @@
     background-color: #161853;
     border: 2px white solid;
     border-radius: 5px;
-
     grid-area: col_4;
 }
 .magic_color_5{
@@ -54,7 +49,6 @@
     background-color: #ee6f57;
     border: 2px white solid;
     border-radius: 5px;
-
     grid-area: col_5;
 }
 .magic_color_6{
@@ -63,6 +57,5 @@
     background-color: #d3c4ab;
     border: 2px white solid;
     border-radius: 5px;
-
     grid-area: col_6;
 }
