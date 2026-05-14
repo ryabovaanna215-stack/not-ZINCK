@@ -63,6 +63,10 @@
     main.phones h2, main.social_media h2{
         font-size: 2rem;
     }
+    #elevetor{
+        width: 70px;
+        height: 70px;
+    }
 }
 
 @media (max-width: 1368px) {
