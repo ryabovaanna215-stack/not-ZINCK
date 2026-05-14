@@ -357,6 +357,8 @@ button{
     background-image: url(../../images/elevator.png);
     background-position: center;
     background-size: cover;
+    width: 90px;
+    height: 90px;
 }
 
 

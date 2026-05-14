@@ -164,7 +164,7 @@ setInterval(()=>{
 // Перемещение по сайту основное
 const about_us = document.getElementById('href_1')
 about_us.addEventListener('click', ()=> {
-    document.getElementById('about_us').scrollIntoView({ 
+    document.getElementById('about_us_main').scrollIntoView({ 
         behavior: 'smooth', 
         block: 'center'
     });
