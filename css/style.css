@@ -185,7 +185,7 @@ div.about_us:nth-child(4) { grid-area: act_4; }
 .active_4{grid-area: act_4_2;}
 
 .active_1, .active_2, .active_3, .active_4{
-    width: 27.25rem;
+    width: 26.25rem;
     height: 12.5rem;
     position: absolute;
     background-color: var(--color_blue);
