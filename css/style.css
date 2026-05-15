@@ -405,7 +405,7 @@ main.main_img_form img{
     border-radius: 20px;
     height: 35rem;
 }
-input[type="email"],input[type="text"],input[type="tel"]{
+input[type="email"],input[type="text"],input[type="number"]{
     padding: 0.625rem;
     font-size: 1.25rem;
     font-family: Inter;
